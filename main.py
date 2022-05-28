@@ -8,7 +8,7 @@ print(imagelist)
 
 imagefiles = []
 for i in imagelist:
-    if i.endswith('.jpg'):
+    if i.endswith(('.jpg', 'jpeg', '.png')):
         imagefiles.append(i)
 
 with open("1images.pdf", "wb") as f:
